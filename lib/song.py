@@ -25,7 +25,7 @@ class Song:
         id, song_name, song_album =song.save()
         print(id, song_name, song_album)
         
-        return {"id": id, "name": song_name, "album": song_album }
+        return song
 
     def save(self):
         sql = f"""
